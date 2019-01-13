@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
 import { Breadcrumb } from 'antd';
 import { Link } from 'react-router-dom';
-
-const breadcrumbNameMap = {
-    '/welcome': '首页',
-    '/need': '需求管理',
-    '/need/import': '需求录入',
-    '/codereview': '代码评审'
-}
+import breadcrumbNameMap from './breadcrumbMap';
 
 class BaseBreadcrumb extends Component {
     constructor(props) {
@@ -43,7 +37,6 @@ class BaseBreadcrumb extends Component {
     }
 
     render() {
-        console.log('this.state.extraBreadcrumbItems', this.state.extraBreadcrumbItems)
         return (
             <Breadcrumb style={{margin: '16px 0'}}>
                 {this.state.extraBreadcrumbItems}
