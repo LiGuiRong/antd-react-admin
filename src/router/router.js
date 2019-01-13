@@ -28,6 +28,15 @@ const routers = [
             loader: () => import('../views/CodeReview/index'),
             loading: () => <div />
         })
+    },
+    {
+        name: 'Users',
+        path: '/users',
+        exact: true,
+        component: Loadable({
+            loader: () => import('../views/Users/index'),
+            loading: () => <div />
+        })
     }
 ]
 

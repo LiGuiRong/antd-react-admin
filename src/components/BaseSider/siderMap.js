@@ -70,7 +70,7 @@ const siderMap = [
         title: '需求评审',
         key: 'xqps',
         icon: 'desktop',
-        toPath: '',
+        toPath: '/users',
         hasSubMenu: false,
         sub: []
     },
@@ -78,7 +78,7 @@ const siderMap = [
         title: '用户管理',
         key: 'yhgl',
         icon: 'team',
-        toPath: '',
+        toPath: '/welcome',
         hasSubMenu: true,
         sub: [
             {
@@ -103,7 +103,7 @@ const siderMap = [
         title: '个人中心',
         key: 'grzx',
         icon: 'user',
-        toPath: '/welcome',
+        toPath: '/users',
         hasSubMenu: false,
         sub: []
     }
